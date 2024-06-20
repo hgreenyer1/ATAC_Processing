@@ -1,0 +1,9 @@
+need to string all of these into a pipeline at some point. 
+Currently here is the order:
+1. align ATAC fastq files with bowtie from the bowtie scripts folder 
+2. filter the bam files (*may need to remove temp files)
+3. convert bamm files to tagalign (to gz)
+4. pool tagAlign files 
+5. call peaks 
+
+*currently the pipeline does not shift tagalign files..? I could do this but we would really only need it for footprinting 
